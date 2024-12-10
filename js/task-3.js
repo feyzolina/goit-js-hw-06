@@ -7,21 +7,21 @@
 
 class StringBuilder {
     #initialValue
-    constructor(initialValue){
+    constructor(initialValue) {
         this.#initialValue = initialValue;
     }
-    getValue(){
+    getValue() {
         return this.#initialValue;
     }
     padEnd(str) {
-        this.#initialValue+=(str);
+        this.#initialValue += (str);
     }
     padStart(str) {
         this.#initialValue = str + this.#initialValue;
     }
     padBoth(str) {
         this.padStart(str);
-        this.padEnd(str); 
+        this.padEnd(str);
     }
 }
 
