@@ -1,16 +1,7 @@
-// Mal deposunu yönetmek için nesneler oluşturacak bir Storage sınıfı oluşturun.Sınıf yalnızca bir argüman bekler 
-// - oluşturulan nesneye items özel özelliğinde yazılan ilk mal dizisi.
-// Aşağıdaki sınıf yöntemlerini tanımlayın:
-// getItems() - items özel özelliğindeki mevcut öğelerin bir dizisini döndürür.
-// addItem(newItem) - yeni bir öğe newItem kabul eder ve nesnenin items özel özelliğindeki öğeler dizisine ekler.
-// removeItem(itemToRemove) - itemToRemove öğesinin adını içeren bir dize alır 
-// ve nesnenin items özel özelliğindeki öğeler dizisinden kaldırır.
-
-
 class Storage {
     #items;
-    constructor(firstItems) {
-        this.#items = firstItems;
+    constructor(items) {
+        this.#items = items;
     }
     getItems() {
         return this.#items;
